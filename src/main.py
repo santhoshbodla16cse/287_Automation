@@ -19,15 +19,6 @@ def open_browser():
     browser.get('http://p-bot.ru/en/index.html')
     time.sleep(5)
 
-# selects the chat window based on the xpath
-def open_chat():
-    user_name = 'Emerson AI'
-    links = browser.find_elements("xpath", "//input[@id='user_request']")
-    for link in links:
-        if "Emerson AI" in link.get_attribute("innerHTML"):
-            link.click()
-            break
-
 
 def read_data(filename):
     with open(filename) as csvfile:
