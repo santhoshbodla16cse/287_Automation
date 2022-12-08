@@ -77,8 +77,8 @@ if __name__ == '__main__':
     #data = read_data("domain_knowledge.csv")
     #data = read_data("chatbot_memory.csv")
     #data = read_data("chat_patterns.csv")
-    data = read_data("qa_interactions.csv")
-    #data = read_data("alltestcases.csv")
+    #data = read_data("qa_interactions.csv")
+    data = read_data("alltestcases.csv")
 
 
     expected_responses = None
